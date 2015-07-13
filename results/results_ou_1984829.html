@@ -1,0 +1,380 @@
+<html>
+<head>
+<script>
+window.google = window.google || {};
+google.maps = google.maps || {};
+(function() {
+  function getScript(src) {
+    document.write('<' + 'script src="' + src + '"><' + '/script>');
+  }
+  var modules = google.maps.modules = {};
+  google.maps.__gjsload__ = function(name, text) {
+    modules[name] = text;
+  };
+  google.maps.Load = function(apiLoad) {
+    delete google.maps.Load;
+    apiLoad([0.009999999776482582,[[["http://mt0.googleapis.com/vt?lyrs=m@310000000\u0026src=api\u0026hl=en-US\u0026","http://mt1.googleapis.com/vt?lyrs=m@310000000\u0026src=api\u0026hl=en-US\u0026"],null,null,null,null,"m@310000000",["https://mts0.google.com/vt?lyrs=m@310000000\u0026src=api\u0026hl=en-US\u0026","https://mts1.google.com/vt?lyrs=m@310000000\u0026src=api\u0026hl=en-US\u0026"]],[["http://khm0.googleapis.com/kh?v=176\u0026hl=en-US\u0026","http://khm1.googleapis.com/kh?v=176\u0026hl=en-US\u0026"],null,null,null,1,"176",["https://khms0.google.com/kh?v=176\u0026hl=en-US\u0026","https://khms1.google.com/kh?v=176\u0026hl=en-US\u0026"]],[["http://mt0.googleapis.com/vt?lyrs=h@310000000\u0026src=api\u0026hl=en-US\u0026","http://mt1.googleapis.com/vt?lyrs=h@310000000\u0026src=api\u0026hl=en-US\u0026"],null,null,null,null,"h@310000000",["https://mts0.google.com/vt?lyrs=h@310000000\u0026src=api\u0026hl=en-US\u0026","https://mts1.google.com/vt?lyrs=h@310000000\u0026src=api\u0026hl=en-US\u0026"]],[["http://mt0.googleapis.com/vt?lyrs=t@132,r@310000000\u0026src=api\u0026hl=en-US\u0026","http://mt1.googleapis.com/vt?lyrs=t@132,r@310000000\u0026src=api\u0026hl=en-US\u0026"],null,null,null,null,"t@132,r@310000000",["https://mts0.google.com/vt?lyrs=t@132,r@310000000\u0026src=api\u0026hl=en-US\u0026","https://mts1.google.com/vt?lyrs=t@132,r@310000000\u0026src=api\u0026hl=en-US\u0026"]],null,null,[["http://cbk0.googleapis.com/cbk?","http://cbk1.googleapis.com/cbk?"]],[["http://khm0.googleapis.com/kh?v=86\u0026hl=en-US\u0026","http://khm1.googleapis.com/kh?v=86\u0026hl=en-US\u0026"],null,null,null,null,"86",["https://khms0.google.com/kh?v=86\u0026hl=en-US\u0026","https://khms1.google.com/kh?v=86\u0026hl=en-US\u0026"]],[["http://mt0.googleapis.com/mapslt?hl=en-US\u0026","http://mt1.googleapis.com/mapslt?hl=en-US\u0026"]],[["http://mt0.googleapis.com/mapslt/ft?hl=en-US\u0026","http://mt1.googleapis.com/mapslt/ft?hl=en-US\u0026"]],[["http://mt0.googleapis.com/vt?hl=en-US\u0026","http://mt1.googleapis.com/vt?hl=en-US\u0026"]],[["http://mt0.googleapis.com/mapslt/loom?hl=en-US\u0026","http://mt1.googleapis.com/mapslt/loom?hl=en-US\u0026"]],[["https://mts0.googleapis.com/mapslt?hl=en-US\u0026","https://mts1.googleapis.com/mapslt?hl=en-US\u0026"]],[["https://mts0.googleapis.com/mapslt/ft?hl=en-US\u0026","https://mts1.googleapis.com/mapslt/ft?hl=en-US\u0026"]],[["https://mts0.googleapis.com/mapslt/loom?hl=en-US\u0026","https://mts1.googleapis.com/mapslt/loom?hl=en-US\u0026"]]],["en-US","US",null,0,null,null,"http://maps.gstatic.com/mapfiles/","http://csi.gstatic.com","https://maps.googleapis.com","http://maps.googleapis.com",null,"https://maps.google.com","https://gg.google.com","http://maps.gstatic.com/maps-api-v3/api/images/","https://www.google.com/maps",0],["http://maps.gstatic.com/maps-api-v3/api/js/21/6","3.21.6"],[524820107],1,null,null,null,null,null,"",null,null,0,"http://khm.googleapis.com/mz?v=176\u0026",null,"https://earthbuilder.googleapis.com","https://earthbuilder.googleapis.com",null,"http://mt.googleapis.com/vt/icon",[["http://mt0.googleapis.com/vt","http://mt1.googleapis.com/vt"],["https://mts0.googleapis.com/vt","https://mts1.googleapis.com/vt"],null,null,null,null,null,null,null,null,null,null,["https://mts0.google.com/vt","https://mts1.google.com/vt"],"/maps/vt",310000000,132],2,500,[null,"http://g0.gstatic.com/landmark/tour","http://g0.gstatic.com/landmark/config",null,"http://www.google.com/maps/preview/log204","","http://static.panoramio.com.storage.googleapis.com/photos/",["http://geo0.ggpht.com/cbk","http://geo1.ggpht.com/cbk","http://geo2.ggpht.com/cbk","http://geo3.ggpht.com/cbk"]],["https://www.google.com/maps/api/js/master?pb=!1m2!1u21!2s6!2sen-US!3sUS!4s21/6","https://www.google.com/maps/api/js/widget?pb=!1m2!1u21!2s6!2sen-US"],null,0,0,"/maps/api/js/ApplicationService.GetEntityDetails",0], loadScriptTime);
+  };
+  var loadScriptTime = (new Date).getTime();
+  getScript("http://maps.gstatic.com/maps-api-v3/api/js/21/6/main.js");
+})();
+</script>
+<script src="gmaps.js"></script>
+</head>
+<body>
+<div id="map">
+
+</div>
+</body>
+
+<script>
+var map = new GMaps({
+  div: '#map',
+  lat: 41.767590374,
+  lng: -87.574042136,
+  width: 800,
+  height: 600
+});
+
+map.addMarker({
+  lat: 41.767590374,
+  lng: -87.574042136,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0331',<br> 'Block': '070XX S CLYDE AV',<br> 'Case Number': 'HH168494',<br> 'Community Area': '',<br> 'Date': '02/05/2002 11:45:00 AM',<br> 'Description': 'POSS: CRACK',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '18',<br> 'ID': '1984829',<br> 'IUCR': '2027',<br> 'Latitude': '41.767590374',<br> 'Location': '(41.767590374, -87.574042136)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.574042136',<br> 'Primary Type': 'NARCOTICS',<br> 'Updated On': '03/30/2006 09:10:16 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191385',<br> 'Y Coordinate': '1858815',<br> 'Year': '2002'}</code>"
+  }
+});
+
+
+
+map.addMarker({
+  lat: 41.763156434,
+  lng: -87.582521182,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0324',<br> 'Block': '072XX S RIDGELAND AV',<br> 'Case Number': 'G640754',<br> 'Community Area': '',<br> 'Date': '10/24/2001 05:35:00 PM',<br> 'Description': 'SIMPLE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '08B',<br> 'ID': '1815802',<br> 'IUCR': '0460',<br> 'Latitude': '41.763156434',<br> 'Location': '(41.763156434, -87.582521182)',<br> 'Location Description': 'SIDEWALK',<br> 'Longitude': '-87.582521182',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189086',<br> 'Y Coordinate': '1857179',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.764406445,
+  lng: -87.579794156,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0324',<br> 'Block': '018XX E 72 ST',<br> 'Case Number': 'G372747',<br> 'Community Area': '',<br> 'Date': '06/26/2001 09:00:00 AM',<br> 'Description': 'TO VEHICLE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '26',<br> 'ID': '1605402',<br> 'IUCR': '1360',<br> 'Latitude': '41.764406445',<br> 'Location': '(41.764406445, -87.579794156)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.579794156',<br> 'Primary Type': 'CRIMINAL TRESPASS',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189826',<br> 'Y Coordinate': '1857641',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.77158433,
+  lng: -87.571707522,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '068XX S PAXTON AV',<br> 'Case Number': 'HH130745',<br> 'Community Area': '',<br> 'Date': '01/16/2002 10:00:00 AM',<br> 'Description': 'FORCIBLE ENTRY',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '05',<br> 'ID': '1946875',<br> 'IUCR': '0610',<br> 'Latitude': '41.77158433',<br> 'Location': '(41.77158433, -87.571707522)',<br> 'Location Description': 'RESIDENCE',<br> 'Longitude': '-87.571707522',<br> 'Primary Type': 'BURGLARY',<br> 'Updated On': '03/30/2006 09:10:16 PM',<br> 'Ward': '',<br> 'X Coordinate': '1192009',<br> 'Y Coordinate': '1860276',<br> 'Year': '2002'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.773367775,
+  lng: -87.576639172,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0332',<br> 'Block': '067XX S JEFFERY BL',<br> 'Case Number': 'G284544',<br> 'Community Area': '',<br> 'Date': '05/17/2001 01:00:00 PM',<br> 'Description': 'OVER $500',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1535904',<br> 'IUCR': '0810',<br> 'Latitude': '41.773367775',<br> 'Location': '(41.773367775, -87.576639172)',<br> 'Location Description': 'SIDEWALK',<br> 'Longitude': '-87.576639172',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190658',<br> 'Y Coordinate': '1860914',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.760833995,
+  lng: -87.573637975,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '021XX E 74 ST',<br> 'Case Number': 'HH189575',<br> 'Community Area': '',<br> 'Date': '02/15/2002 09:30:00 PM',<br> 'Description': 'OVER $500',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1992469',<br> 'IUCR': '0810',<br> 'Latitude': '41.760833995',<br> 'Location': '(41.760833995, -87.573637975)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.573637975',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191517',<br> 'Y Coordinate': '1856354',<br> 'Year': '2002'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.75890977,
+  lng: -87.565311428,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0421',<br> 'Block': '075XX S PHILLIPS AV',<br> 'Case Number': 'G003678',<br> 'Community Area': '',<br> 'Date': '01/02/2001 05:30:00 PM',<br> 'Description': 'POSS: CANNABIS 30GMS OR LESS',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '18',<br> 'ID': '1325234',<br> 'IUCR': '1811',<br> 'Latitude': '41.75890977',<br> 'Location': '(41.75890977, -87.565311428)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.565311428',<br> 'Primary Type': 'NARCOTICS',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1193795',<br> 'Y Coordinate': '1855673',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.763946098,
+  lng: -87.566625913,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0334',<br> 'Block': '072XX S YATES AV',<br> 'Case Number': 'G408784',<br> 'Community Area': '',<br> 'Date': '07/13/2001 12:30:00 AM',<br> 'Description': 'AGGRAVATED: HANDGUN',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '04B',<br> 'ID': '1630929',<br> 'IUCR': '041A',<br> 'Latitude': '41.763946098',<br> 'Location': '(41.763946098, -87.566625913)',<br> 'Location Description': 'RESIDENCE PORCH/HALLWAY',<br> 'Longitude': '-87.566625913',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1193420',<br> 'Y Coordinate': '1857505',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.769832961,
+  lng: -87.583730024,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0332',<br> 'Block': '017XX E 69 ST',<br> 'Case Number': 'G701174',<br> 'Community Area': '',<br> 'Date': '11/21/2001 07:50:00 PM',<br> 'Description': 'TO PROPERTY',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '14',<br> 'ID': '1860975',<br> 'IUCR': '1310',<br> 'Latitude': '41.769832961',<br> 'Location': '(41.769832961, -87.583730024)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.583730024',<br> 'Primary Type': 'CRIMINAL DAMAGE',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1188735',<br> 'Y Coordinate': '1859609',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.76896023,
+  lng: -87.566672516,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0331',<br> 'Block': '069XX S SOUTH SHORE DR',<br> 'Case Number': 'G264328',<br> 'Community Area': '',<br> 'Date': '05/08/2001 10:50:00 AM',<br> 'Description': 'TO LAND',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '26',<br> 'ID': '1520529',<br> 'IUCR': '1330',<br> 'Latitude': '41.76896023',<br> 'Location': '(41.76896023, -87.566672516)',<br> 'Location Description': 'RESIDENCE',<br> 'Longitude': '-87.566672516',<br> 'Primary Type': 'CRIMINAL TRESPASS',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1193391',<br> 'Y Coordinate': '1859332',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.77107096,
+  lng: -87.566728031,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '068XX S SOUTH SHORE DR',<br> 'Case Number': 'G693472',<br> 'Community Area': '',<br> 'Date': '11/18/2001 05:45:00 AM',<br> 'Description': 'KIDNAPPING',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '26',<br> 'ID': '1856061',<br> 'IUCR': '4210',<br> 'Latitude': '41.77107096',<br> 'Location': '(41.77107096, -87.566728031)',<br> 'Location Description': 'SIDEWALK',<br> 'Longitude': '-87.566728031',<br> 'Primary Type': 'KIDNAPPING',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1193369',<br> 'Y Coordinate': '1860101',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.773437695,
+  lng: -87.566901479,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '067XX S SOUTH SHORE DR',<br> 'Case Number': 'G577595',<br> 'Community Area': '',<br> 'Date': '09/26/2001 12:00:00 AM',<br> 'Description': 'OVER $500',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1764038',<br> 'IUCR': '0810',<br> 'Latitude': '41.773437695',<br> 'Location': '(41.773437695, -87.566901479)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.566901479',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1193314',<br> 'Y Coordinate': '1860963',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.757941109,
+  lng: -87.571091859,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0414',<br> 'Block': '075XX S PAXTON AV',<br> 'Case Number': 'G602101',<br> 'Community Area': '',<br> 'Date': '10/07/2001 02:25:00 PM',<br> 'Description': 'TO PROPERTY',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '14',<br> 'ID': '1781448',<br> 'IUCR': '1310',<br> 'Latitude': '41.757941109',<br> 'Location': '(41.757941109, -87.571091859)',<br> 'Location Description': 'RESIDENCE',<br> 'Longitude': '-87.571091859',<br> 'Primary Type': 'CRIMINAL DAMAGE',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1192221',<br> 'Y Coordinate': '1855306',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.764106068,
+  lng: -87.579185538,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '072XX S BENNETT AV',<br> 'Case Number': 'HH253837',<br> 'Community Area': '',<br> 'Date': '02/01/2002 02:30:00 PM',<br> 'Description': 'FINANCIAL ID THEFT: OVER $300',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '2042386',<br> 'IUCR': '0840',<br> 'Latitude': '41.764106068',<br> 'Location': '(41.764106068, -87.579185538)',<br> 'Location Description': 'RESIDENCE',<br> 'Longitude': '-87.579185538',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '03/30/2006 09:10:16 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189993',<br> 'Y Coordinate': '1857533',<br> 'Year': '2002'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.765988783,
+  lng: -87.573789768,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '021XX E 71 ST',<br> 'Case Number': 'G767776',<br> 'Community Area': '',<br> 'Date': '12/24/2001 10:30:00 AM',<br> 'Description': 'OVER $500',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1915702',<br> 'IUCR': '0810',<br> 'Latitude': '41.765988783',<br> 'Location': '(41.765988783, -87.573789768)',<br> 'Location Description': 'OTHER COMMERCIAL TRANSPORTATION',<br> 'Longitude': '-87.573789768',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191459',<br> 'Y Coordinate': '1858232',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.766358933,
+  lng: -87.575401927,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0331',<br> 'Block': '020XX E 71 ST',<br> 'Case Number': 'HH254904',<br> 'Community Area': '',<br> 'Date': '03/20/2002 06:05:00 PM',<br> 'Description': 'POSS: CANNABIS 30GMS OR LESS',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '18',<br> 'ID': '2047087',<br> 'IUCR': '1811',<br> 'Latitude': '41.766358933',<br> 'Location': '(41.766358933, -87.575401927)',<br> 'Location Description': 'RESTAURANT',<br> 'Longitude': '-87.575401927',<br> 'Primary Type': 'NARCOTICS',<br> 'Updated On': '03/30/2006 09:10:16 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191018',<br> 'Y Coordinate': '1858363',<br> 'Year': '2002'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.772407292,
+  lng: -87.575393047,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '067XX S CHAPPEL AV',<br> 'Case Number': 'G528286',<br> 'Community Area': '',<br> 'Date': '09/03/2001 10:30:00 PM',<br> 'Description': 'SIMPLE',<br> 'District': '',<br> 'Domestic': 'true',<br> 'FBI Code': '08B',<br> 'ID': '1733817',<br> 'IUCR': '0460',<br> 'Latitude': '41.772407292',<br> 'Location': '(41.772407292, -87.575393047)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.575393047',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191001',<br> 'Y Coordinate': '1860567',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.762373564,
+  lng: -87.579055546,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '019XX E 73 ST',<br> 'Case Number': 'G703604',<br> 'Community Area': '',<br> 'Date': '11/23/2001 12:00:00 PM',<br> 'Description': 'SIMPLE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '08A',<br> 'ID': '1862521',<br> 'IUCR': '0560',<br> 'Latitude': '41.762373564',<br> 'Location': '(41.762373564, -87.579055546)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.579055546',<br> 'Primary Type': 'ASSAULT',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190034',<br> 'Y Coordinate': '1856902',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.765292711,
+  lng: -87.582287341,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0324',<br> 'Block': '017XX E 71 PL',<br> 'Case Number': 'G601384',<br> 'Community Area': '',<br> 'Date': '10/07/2001 03:00:00 AM',<br> 'Description': 'ENDANGERING LIFE/HEALTH CHILD',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '26',<br> 'ID': '1782576',<br> 'IUCR': '1710',<br> 'Latitude': '41.765292711',<br> 'Location': '(41.765292711, -87.582287341)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.582287341',<br> 'Primary Type': 'OFFENSE INVOLVING CHILDREN',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189143',<br> 'Y Coordinate': '1857958',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.773116544,
+  lng: -87.572671877,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0331',<br> 'Block': '067XX S MERRILL AV',<br> 'Case Number': 'G308427',<br> 'Community Area': '',<br> 'Date': '05/28/2001 06:55:00 PM',<br> 'Description': 'SIMPLE',<br> 'District': '',<br> 'Domestic': 'true',<br> 'FBI Code': '08B',<br> 'ID': '1552199',<br> 'IUCR': '0460',<br> 'Latitude': '41.773116544',<br> 'Location': '(41.773116544, -87.572671877)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.572671877',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191741',<br> 'Y Coordinate': '1860832',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.765889903,
+  lng: -87.58380525,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0324',<br> 'Block': '016XX E 71 ST',<br> 'Case Number': 'G097734',<br> 'Community Area': '',<br> 'Date': '02/17/2001 09:35:00 AM',<br> 'Description': 'AGGRAVATED: OTHER DANG WEAPON',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '04B',<br> 'ID': '1386437',<br> 'IUCR': '0430',<br> 'Latitude': '41.765889903',<br> 'Location': '(41.765889903, -87.58380525)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.58380525',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1188727',<br> 'Y Coordinate': '1858172',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.762390582,
+  lng: -87.57913965,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '073XX S BENNETT AV',<br> 'Case Number': 'G155816',<br> 'Community Area': '',<br> 'Date': '03/19/2001 01:50:00 AM',<br> 'Description': 'AGGRAVATED:KNIFE/CUTTING INSTR',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '04B',<br> 'ID': '1433981',<br> 'IUCR': '0420',<br> 'Latitude': '41.762390582',<br> 'Location': '(41.762390582, -87.57913965)',<br> 'Location Description': 'SIDEWALK',<br> 'Longitude': '-87.57913965',<br> 'Primary Type': 'BATTERY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190011',<br> 'Y Coordinate': '1856908',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.769638927,
+  lng: -87.572580995,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '069XX S MERRILL AV',<br> 'Case Number': 'G654659',<br> 'Community Area': '',<br> 'Date': '10/30/2001 04:30:00 PM',<br> 'Description': 'OVER $500',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1821660',<br> 'IUCR': '0810',<br> 'Latitude': '41.769638927',<br> 'Location': '(41.769638927, -87.572580995)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.572580995',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191777',<br> 'Y Coordinate': '1859565',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.764390563,
+  lng: -87.581139571,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0324',<br> 'Block': '018XX E 72 ST',<br> 'Case Number': 'G291653',<br> 'Community Area': '',<br> 'Date': '05/20/2001 08:30:00 PM',<br> 'Description': 'AUTOMOBILE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '07',<br> 'ID': '1538241',<br> 'IUCR': '0910',<br> 'Latitude': '41.764390563',<br> 'Location': '(41.764390563, -87.581139571)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.581139571',<br> 'Primary Type': 'MOTOR VEHICLE THEFT',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189459',<br> 'Y Coordinate': '1857632',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.758951546,
+  lng: -87.57907363,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0333',<br> 'Block': '018XX E 75 ST',<br> 'Case Number': 'G257802',<br> 'Community Area': '',<br> 'Date': '05/05/2001 03:00:00 AM',<br> 'Description': 'AUTOMOBILE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '07',<br> 'ID': '1513848',<br> 'IUCR': '0910',<br> 'Latitude': '41.758951546',<br> 'Location': '(41.758951546, -87.57907363)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.57907363',<br> 'Primary Type': 'MOTOR VEHICLE THEFT',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190040',<br> 'Y Coordinate': '1855655',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.766295931,
+  lng: -87.581685481,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0332',<br> 'Block': '017XX E 71 ST',<br> 'Case Number': 'G048585',<br> 'Community Area': '',<br> 'Date': '01/23/2001 10:05:00 PM',<br> 'Description': 'UNLAWFUL POSS OF HANDGUN',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '15',<br> 'ID': '1347823',<br> 'IUCR': '143A',<br> 'Latitude': '41.766295931',<br> 'Location': '(41.766295931, -87.581685481)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.581685481',<br> 'Primary Type': 'WEAPONS VIOLATION',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189304',<br> 'Y Coordinate': '1858325',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.762558982,
+  lng: -87.576370322,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0333',<br> 'Block': '072XX S JEFFERY AV',<br> 'Case Number': 'HH206710',<br> 'Community Area': '',<br> 'Date': '02/24/2002 06:13:19 PM',<br> 'Description': 'POSS: CANNABIS 30GMS OR LESS',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '18',<br> 'ID': '2009491',<br> 'IUCR': '1811',<br> 'Latitude': '41.762558982',<br> 'Location': '(41.762558982, -87.576370322)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.576370322',<br> 'Primary Type': 'NARCOTICS',<br> 'Updated On': '03/30/2006 09:10:16 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190766',<br> 'Y Coordinate': '1856976',<br> 'Year': '2002'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.766845682,
+  lng: -87.582661449,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0332',<br> 'Block': '070XX S EAST END AV',<br> 'Case Number': 'G548983',<br> 'Community Area': '',<br> 'Date': '09/12/2001 09:00:00 PM',<br> 'Description': 'AUTOMOBILE',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '07',<br> 'ID': '1740229',<br> 'IUCR': '0910',<br> 'Latitude': '41.766845682',<br> 'Location': '(41.766845682, -87.582661449)',<br> 'Location Description': 'STREET',<br> 'Longitude': '-87.582661449',<br> 'Primary Type': 'MOTOR VEHICLE THEFT',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1189036',<br> 'Y Coordinate': '1858523',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.765814999,
+  lng: -87.576148771,
+  infoWindow: {
+    content: "<code>{'Arrest': 'true',<br> 'Beat': '0333',<br> 'Block': '071XX S JEFFERY AV',<br> 'Case Number': 'G580156',<br> 'Community Area': '',<br> 'Date': '09/27/2001 04:25:00 PM',<br> 'Description': '$500 AND UNDER',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '1766028',<br> 'IUCR': '0820',<br> 'Latitude': '41.765814999',<br> 'Location': '(41.765814999, -87.576148771)',<br> 'Location Description': 'DRUG STORE',<br> 'Longitude': '-87.576148771',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '12/04/2014 12:43:35 PM',<br> 'Ward': '',<br> 'X Coordinate': '1190816',<br> 'Y Coordinate': '1858163',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.767815437,
+  lng: -87.574046813,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '070XX S CLYDE AVE',<br> 'Case Number': 'HJ235943',<br> 'Community Area': '43',<br> 'Date': '08/23/2001 01:00:00 PM',<br> 'Description': 'FINANCIAL ID THEFT: OVER $300',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '06',<br> 'ID': '2634805',<br> 'IUCR': '0840',<br> 'Latitude': '41.767815437',<br> 'Location': '(41.767815437, -87.574046813)',<br> 'Location Description': 'APARTMENT',<br> 'Longitude': '-87.574046813',<br> 'Primary Type': 'THEFT',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '5',<br> 'X Coordinate': '1191383',<br> 'Y Coordinate': '1858897',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+map.addMarker({
+  lat: 41.766994764,
+  lng: -87.574027165,
+  infoWindow: {
+    content: "<code>{'Arrest': 'false',<br> 'Beat': '0331',<br> 'Block': '070XX S CLYDE AV',<br> 'Case Number': 'G669208',<br> 'Community Area': '',<br> 'Date': '11/06/2001 03:00:00 AM',<br> 'Description': 'FORCIBLE ENTRY',<br> 'District': '',<br> 'Domestic': 'false',<br> 'FBI Code': '05',<br> 'ID': '1836905',<br> 'IUCR': '0610',<br> 'Latitude': '41.766994764',<br> 'Location': '(41.766994764, -87.574027165)',<br> 'Location Description': 'RESIDENCE',<br> 'Longitude': '-87.574027165',<br> 'Primary Type': 'BURGLARY',<br> 'Updated On': '03/31/2006 10:03:38 PM',<br> 'Ward': '',<br> 'X Coordinate': '1191391',<br> 'Y Coordinate': '1858598',<br> 'Year': '2001'}</code>"
+  },
+  opacity: 0.5
+});
+
+
+
+</script>
+</html>
