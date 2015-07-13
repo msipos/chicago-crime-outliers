@@ -1,3 +1,4 @@
+import numpy as np
 import re
 
 class UniquenessMapper:
@@ -13,6 +14,40 @@ class UniquenessMapper:
             self.max_int += 1
             self.mapping[str] = self.max_int
             return self.max_int
+
+class WindowedHistogram:
+    ''' Run a histogram in a sliding window (valid for integers). '''
+    def __init__(self, window_size):
+        self.window_size = window_size
+        self.memory = np.zeros(window_size, dtype='int')
+        self.memory_idx = 0
+        self.histogram = {}
+        self.histogram_total = 0
+
+    def add(self, value):
+        if self.histogram_total > self.window_size:
+            old_value = self.memory[self.memory_idx]
+            self.histogram[old_value] -= 1
+        self.histogram_total += 1
+
+        # Remember value in memory
+        self.memory[self.memory_idx] = value
+        self.memory_idx += 1
+        if self.memory_idx >= self.window_size: self.memory_idx = 0
+
+        if value not in self.histogram:
+            self.histogram[value] = 0
+        self.histogram[value] += 1
+
+    def get_prop(self, value):
+        total = self.histogram_total
+        if total > self.window_size: total = self.window_size
+        return float(self.histogram[value]) / total
+
+    def debug(self):
+        keys = sorted(self.histogram.keys())
+        for key in keys:
+            print key, self.get_prop(key)
 
 date_re = re.compile('(..)/(..)/(....) (..):(..):(..) (..)')
 
