@@ -1,27 +1,44 @@
 ''' Running instructions:
 
-  python find_outliers.py CHICAGO_CRIME_DATA.csv
+  python find_outliers.py CHICAGO_CRIME_DATA.csv NUM_DATA_POINTS_AFTER  STOP_AFTER
 
 '''
 
-import csv
+import cPickle as pickle
 import lib
+import numpy as np
 import sys
+import sklearn.ensemble
 
-location_desc_mapper = lib.UniquenessMapper()
-primary_type_mapper = lib.UniquenessMapper()
 
-with open(sys.argv[1], 'rb') as csvfile:
-    csvreader = csv.DictReader(csvfile)
-    for row in csvreader:
-        try:
-            time_of_day = lib.date_to_num(row['Date'])
-            longitude = float(row['Longitude'])
-            latitude = float(row['Latitude'])
-            location_desc = location_desc_mapper.get_id(row['Location Description'])
-            primary_type = primary_type_mapper.get_id(row['Primary Type'])
+num_after = int(sys.argv[2])
+stop_after = int(sys.argv[3])
 
-            print time_of_day, longitude, latitude, location_desc, primary_type
-        except ValueError, e:
-            # Ignore missing data
-            pass
+classifier = pickle.load(open('classifier.pickle'))
+histogram = pickle.load(open('histogram.pickle'))
+
+
+i = 0
+with open(sys.argv[1], 'rb') as file:
+    for row in file:
+        i += 1
+        if i < num_after: continue
+        if i > num_after+stop_after: break
+
+        arr = row.split(' ')
+        id = arr[0]
+        tod = float(arr[1])
+        longitude = float(arr[2])
+        latitude = float(arr[3])
+        loc = int(arr[4])
+        typ = int(arr[5])
+
+
+        query_data = np.matrix([tod, longitude, latitude, loc])
+
+        PCs = classifier.predict_proba(query_data)
+        PC = PCs[0, typ]
+        pC = histogram.get_prop(typ)
+        score = (PC - pC)/ pC
+
+        print id, typ, score
