@@ -6,6 +6,7 @@
 
 import csv
 import lib
+import pprint
 import sys
 import sklearn.ensemble
 
@@ -27,3 +28,6 @@ with open(sys.argv[1], 'rb') as csvfile:
         except ValueError, e:
             # Ignore missing data
             pass
+
+    sys.stderr.write('locations = {0}\n'.format(pprint.pformat(location_desc_mapper.mapping)))
+    sys.stderr.write('types = {0}\n'.format(pprint.pformat(primary_type_mapper.mapping)))
