@@ -36,7 +36,7 @@ with open(sys.argv[1], 'rb') as file:
         if i >= num_samples:
             break
 
-classifier = sklearn.ensemble.RandomForestClassifier(n_estimators=300, max_depth=15)
+classifier = sklearn.ensemble.RandomForestClassifier(n_estimators=200, max_depth=10)
 classifier.fit(training_data, result_data)
 
 pickle.dump(classifier, open('classifier.pickle', 'wb'), pickle.HIGHEST_PROTOCOL)
